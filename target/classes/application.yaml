@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: accountmanager
+  datasource:
+    userName: tu
+    password: hello
+    url: jdbc:mysql://localhost:3306/accountmanager?allowPublicKeyRetrieval=true&useSSL=true
+  # Cấu hình Đa ngôn ngữ (i18n)
+  messages:
+    basename: i18n/messages
+    encoding: UTF-8
+server:
+  port: 8081
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+# Cấu hình Swagger OpenAPI UI
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
